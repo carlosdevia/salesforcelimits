@@ -1,0 +1,29 @@
+{
+  "name": "salesforcelimits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "jsforce": "^1.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlosdevia/salesforcelimits"
+  },
+  "keywords": [
+    "salesforce",
+    "node",
+    "heroku",
+    "express",
+    "jsforce",
+    "salesforce limits"
+  ]
+}
