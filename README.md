@@ -1,8 +1,16 @@
 # Salesforce Limit Status (node-jsforce)
 
-A very simple Salesforce - Node.js Limit Status Page using [Express](http://expressjs.com/).
+A very simple Salesforce Limits Monitor Status Page using Node.Js and [Express](http://expressjs.com/).
 
 ![A test image](public/docs/screen1.jpg)
+
+From this page we can monitor the status of the following salesforce limits not available in any status page inside the Salesforce Admin.
+
+```javascript
+ActiveScratchOrgs, AnalyticsExternalDataSizeMB, BOZosCalloutHourlyLimit, ConcurrentAsyncGetReportInstances, ConcurrentEinsteinDataInsightsStoryCreation, ConcurrentEinsteinDiscoveryStoryCreation, ConcurrentSyncReportRuns, DailyAnalyticsDataflowJobExecutions, DailyAnalyticsUploadedFilesSizeMB, DailyApiRequests, DailyAsyncApexExecutions, DailyBulkApiBatches, DailyBulkV2QueryFileStorageMB, DailyBulkV2QueryJobs, DailyDurableGenericStreamingApiEvents, DailyDurableStreamingApiEvents, DailyEinsteinDataInsightsStoryCreation, DailyEinsteinDiscoveryPredictAPICalls, DailyEinsteinDiscoveryPredictionsByCDC, DailyEinsteinDiscoveryStoryCreation, DailyFieldServiceAppointmentOptimization, DailyGenericStreamingApiEvents, DailyScratchOrgs, DailyStandardVolumePlatformEvents, DailyStreamingApiEvents, DailyWorkflowEmails, DataStorageMB, DurableStreamingApiConcurrentClients, FileStorageMB, HourlyAsyncReportRuns, HourlyDashboardRefreshes, HourlyDashboardResults, HourlyDashboardStatuses, HourlyLongTermIdMapping, HourlyManagedContentPublicRequests, HourlyODataCallout, HourlyPublishedPlatformEvents, HourlyPublishedStandardVolumePlatformEvents, HourlyShortTermIdMapping, HourlySyncReportRuns, HourlyTimeBasedWorkflow, MassEmail, MonthlyEinsteinDiscoveryStoryCreation, MonthlyPlatformEventsUsageEntitlement, Package2VersionCreates, Package2VersionCreatesWithoutValidation, PermissionSets, PrivateConnectOutboundCalloutHourlyLimitMB, SingleEmail, StreamingApiConcurrentClients
+```
+
+You can connect a Free Monitoring service like UpTimerobot.com or PingDom.com and get an email when you find the Word "Warning" >50% or "Error" > 80%.
 
 ## Add your env parameters
 Make sure you create a .env file in the root folder with the following information
